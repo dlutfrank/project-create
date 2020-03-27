@@ -1,0 +1,18 @@
+{
+  "name": "project-create",
+  "version": "1.0.0",
+  "description": "create project by template",
+  "main": "lib/create_command.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlutfrank/project-create.git"
+  },
+  "keywords": [
+    "project-create"
+  ],
+  "author": "swx <dlut_frank@163.com>",
+  "license": "ISC"
+}
