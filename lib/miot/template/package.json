@@ -1,0 +1,11 @@
+{
+    "name": "((name))",
+    "version": "1.0.0",
+    "description": "((desc))",
+    "scripts": {
+        "start": "node ../../bin/runProject.js"
+    },
+    "dependencies": {
+        "react-native-root-toast": "^3.1.2"
+    }
+}

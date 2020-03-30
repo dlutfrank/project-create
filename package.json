@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "create project by template",
   "main": "lib/create_command.js",
+  "bin": {
+    "project-create": "bin/project-create.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +17,14 @@
     "project-create"
   ],
   "author": "swx <dlut_frank@163.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "globby": "^11.0.0",
+    "inquirer": "^7.1.0",
+    "mkdirp": "^1.0.3",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "eslint-config-egg": "^8.0.1"
+  }
 }
