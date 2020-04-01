@@ -1,5 +1,5 @@
 {
-    "package_path": "((package))",
+    "package_path": "((name))",
     "models": "((models))",
     "min_sdk_api_level": 10034,
     "developer_id": "111229",
