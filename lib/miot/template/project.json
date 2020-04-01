@@ -1,6 +1,6 @@
 {
-    "package_path": "((name))",
-    "models": "((models))",
+    "package_path": "{{ name }}",
+    "models": "{{ models }}",
     "min_sdk_api_level": 10034,
     "developer_id": "111229",
     "version_code": 1,
