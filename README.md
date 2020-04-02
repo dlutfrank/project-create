@@ -70,9 +70,9 @@ module.exports = {
     default: 'zhimi.demo.model',
   },
   name: {
-    description: 'project name',
+    desc: 'project name',
   },
-  password: {
+  pwd: {
     type: 'password',
   }
 }
@@ -90,7 +90,6 @@ module.exports = {
 #### 模板工程导出可选项
 
 + type:(String)，默认为input，可选参数为input、password、number、list
-+ name:(String)，变量名，用来接收交互输入时变量的结果
 + desc:(String|Function)，提示语，交互输入时候的提示
 + default:(String|Number|Boolean|Function)，变量值的默认值
 + validate:(Function)，校验函数，校验输入值是否合法
