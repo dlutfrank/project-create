@@ -1,6 +1,6 @@
 {
   "name": "project-create",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create project by template",
   "main": "lib/create_command.js",
   "bin": {
