@@ -57,7 +57,7 @@ $ project-create [dir] -f
     └── res
 ```
 每个模板工程由根目录下的index.js文件和里面的template文件夹构成。
-index.js中导出需要替换的变量，这些变量可以被template中的文件所使用。
+index.js中导出需要替换的变量和父模板名，这些可替换变量可以被template中的文件所使用。
 template中存放模板工程所需要的文件。
 
 例如：
@@ -65,16 +65,19 @@ template中存放模板工程所需要的文件。
 ```js
 // index.js
 module.exports = {
-  models: {
-    description: 'model of device',
-    default: 'zhimi.demo.model',
+  repalce: {
+    models: {
+      description: 'model of device',
+      default: 'zhimi.demo.model',
+    },
+    name: {
+      desc: 'project name',
+    },
+    pwd: {
+      type: 'password',
+    }
   },
-  name: {
-    desc: 'project name',
-  },
-  pwd: {
-    type: 'password',
-  }
+  base: null,
 }
 
 ```
@@ -87,7 +90,9 @@ module.exports = {
 ```
 所有使用了`"{{ modles }}"`的地方，都会替换成通过交互输入的modles，如果不指定，则会替换为默认的`zhimi.demo.model`。当然也可以通过转义来取消替换，`\{{ models }}`将会按照原样输出，不会替换变量。
 
-#### 模板工程导出可选项
+`base`指定了模板工程的父模板工程，如果存在父模板工程，则会先拷贝父模板工程的项目到目标文件夹，子模板中的文件将会对父模板中同名的文件进行覆盖。
+
+#### 模板工程导出变量可选项
 
 + type:(String)，默认为input，可选参数为input、password、number、list
 + desc:(String|Function)，提示语，交互输入时候的提示
